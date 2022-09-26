@@ -28,14 +28,10 @@ A side effect is created using `useEffect` hook to update the view type when the
 useEffect(() => {
   if (viewType === "2D") {
     sceneView.container = nullRef.current as HTMLDivElement;
-
     mapView.container = viewRef.current as HTMLDivElement;
-    mapView.viewpoint = viewpoint as Viewpoint;
   } else {
     mapView.container = nullRef.current as HTMLDivElement;
-
     sceneView.container = viewRef.current as HTMLDivElement;
-    sceneView.viewpoint = viewpoint as Viewpoint;
   }
 }, [viewType]);
 ```
@@ -48,9 +44,11 @@ const [viewpoint, setViewpoint] = React.useState<Viewpoint>();
 useEffect(() => {
   if (viewType === "2D") {
     setViewpoint(sceneView.viewpoint);
+    mapView.viewpoint = viewpoint as Viewpoint;
     // Omit code for brevity
   } else {
     setViewpoint(mapView.viewpoint);
+    sceneView.viewpoint = viewpoint as Viewpoint;
     // Omit code for brevity
   }
 }, [viewType]);
