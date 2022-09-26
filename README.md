@@ -7,7 +7,7 @@ This project is a React version of the sample code demonstrated [here](https://d
 A `viewType` state is created using `useState` hook to keep track of the current view type, i.e. `2D` or `3D`.
 
 ```js
-const [viewType, setViewType] = (React.useState < "2D") | ("3D" > "3D");
+const [viewType, setViewType] = React.useState <"2D"|"3D"> ("3D");
 ```
 
 Clicking on the `2D`/`3D` button will toggle the view type and update the `viewType` state.
