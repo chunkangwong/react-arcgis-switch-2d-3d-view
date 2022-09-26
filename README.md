@@ -64,11 +64,8 @@ useEffect(() => {
    npm install / yarn install
    ```
 
-````
-
 2. Start project in development
 
    ```bash
    npm run dev / yarn dev
    ```
-````
