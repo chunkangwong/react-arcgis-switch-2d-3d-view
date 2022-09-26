@@ -1,0 +1,17 @@
+#viewDiv {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#infoDiv {
+  position: absolute;
+  top: 15px;
+  left: 60px;
+}
+
+#infoDiv input {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px;
+}
