@@ -1,4 +1,4 @@
-# [React TS + ArcGIS JS API 4.24] Switch view from 2D to 3D
+# [React + ArcGIS JS API] Switch view from 2D to 3D
 
 This project is a React version of the sample code demonstrated [here](https://developers.arcgis.com/javascript/latest/sample-code/views-switch-2d-3d/) in the official ArcGIS Featured Samples.
 
