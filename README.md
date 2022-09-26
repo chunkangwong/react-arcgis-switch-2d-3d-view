@@ -36,7 +36,7 @@ useEffect(() => {
 }, [viewType]);
 ```
 
-To improve user experience, a `viewpoint` state is created to keep track of the current viewpoint of the view. This is done by setting the `viewpoint` state when the `view` property of the `MapView` or `SceneView` changes.
+To improve user experience, a `viewpoint` state is created to keep track of the current viewpoint of the view. This is done by setting the `viewpoint` state when the `viewType` state changes.
 
 ```js
 const [viewpoint, setViewpoint] = React.useState<Viewpoint>();
