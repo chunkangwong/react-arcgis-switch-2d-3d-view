@@ -39,7 +39,7 @@ function App() {
   const [viewpoint, setViewpoint] = React.useState<Viewpoint>();
 
   useEffect(() => {
-    if (viewType === "3D") {
+    if (viewType === "2D") {
       setViewpoint(sceneView.viewpoint);
       sceneView.container = nullRef.current as HTMLDivElement;
 
